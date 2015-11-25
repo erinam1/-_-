@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="1ac46aac-71d3-4854-9028-3956eccb5081" name="УдалениеРаботника" linkedPackageId="45b7ddf1-7dbd-4ae4-9081-fde56e4a8a7b" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e8e03579-8288-4c4e-9f24-65e8938c391b">
+      <profileInstance Id="f235ee16-08a2-4306-b019-13dacd0ef70d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ffa222cb-67f0-48ed-baa5-1a528d76b12a">
+      <profileInstance Id="d79c231d-78f8-47c9-b0ca-d48ea4b71a96" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="67f0fe72-91c2-4142-aa9a-6749ac19b04d" name="УдалитьРаботника" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="47c65bee-116b-4374-8992-64739ac7c0b9" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="45b7ddf1-7dbd-4ae4-9081-fde56e4a8a7b" name="Модель_ФИО">
+    <elementDefinition Id="ac869092-62d6-4834-8c2e-21c75fd18223" />
+  </package>
+</logicalClassDesignerModel>

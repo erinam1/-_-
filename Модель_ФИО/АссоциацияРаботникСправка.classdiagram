@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="385e4ded-2362-4c86-8117-51b6a9160e62" name="АссоциацияРаботникСправка" linkedPackageId="b5f56e4a-c499-43f4-8ef0-d8d749872248" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="4474bee3-5c19-4dc7-bd62-1295646386e0">
+      <profileInstance Id="5356b101-63e5-4176-973b-f868be15b25e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="187a754b-a95b-4065-ac23-bb499d085153">
+      <profileInstance Id="e285f3b5-5587-4c10-aa68-8c4b04cad3d4" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6a301e5e-7ea1-4e4d-a58f-e5d582c8b1db" name="ВыплатаКомис" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bd2bc08d-df95-4fee-a6e3-f73c6ec44518" />
+        <targetEnds>
+          <association Id="087f81b3-358d-439b-a5b8-2f9fe4ce4084" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="be2c8b09-3d38-43c6-8817-f26438b3db64" LastKnownName="СправкаПродаж" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6c815f90-714c-40f2-8af3-b495b8738147" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ec534aa5-e82a-4565-8b70-5070d6e6086b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fecb54d8-3405-4b23-bba8-33334b1ffd50" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="f86dbd1e-ba2a-435a-a280-5ace84824629" name="Lower" value="0">
+                      <elementDefinition Id="4e3b6150-eeae-420b-8269-c363832cdfc8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="c0b46292-7630-4312-9782-5e68afa81d68" name="Upper" value="*">
+                      <elementDefinition Id="14c0fd4d-4eed-464a-8ba9-7b48c90ed0c6" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2bd5fa4c-004f-4184-8aa7-99fe2f9c507f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="68cdfee5-7b2f-4cc9-8c94-55fcef123367" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="9175193e-0297-4568-b449-83cd35ed0de4" name="оклад" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fffa9184-bada-4bb1-9131-3c4e1ba71da6" />
+          </property>
+          <property Id="6daca7eb-0f06-4aa9-a951-7f41aa7705d6" name="комиссионСтавка" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6db2930f-ad4a-4389-b69c-7fa52d271b2d" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="be2c8b09-3d38-43c6-8817-f26438b3db64" name="СправкаПродаж" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="07d24e9b-c207-4105-9605-25148c005392" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="b5f56e4a-c499-43f4-8ef0-d8d749872248" name="Модель_ФИО">
+    <elementDefinition Id="ac869092-62d6-4834-8c2e-21c75fd18223" />
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="a77339fd-0fba-41d2-b797-4f1b518485d1" name="КомандаДобавлениеРаботника" linkedPackageId="ed5b650d-ad97-4d1b-8688-f6d16e50ed9f" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="440ff3cf-3caf-45fe-a5af-e6b64b584912" name="ДобавитьРаботника" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c7f585db-60a6-4f43-9e94-81a9049b92fe" />
+        <ownedAttributesInternal>
+          <property Id="c601b1c3-d10a-4756-81a0-67da93ff1229" name="рабНом" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f31f84e2-0dbd-424e-9f7c-98d9e6ae896c" />
+          </property>
+          <property Id="93a2030f-0532-46cf-89ac-12bb3a0dac82" name="фио" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="263623df-c761-40bf-bdfa-a40344fcf1c0" />
+          </property>
+          <property Id="20d8bca6-25bc-4600-86a6-1940dea16baa" name="адрес" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="true" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dc14b682-b70a-4fac-a51d-900efa5c72ab" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="33f501e5-179a-4885-9638-f449b7b6d0f5" name="ДобавитьРаботникаЧас" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="175d559f-be69-4e56-8980-b2ed1fb32bfb" />
+        <generalsInternal>
+          <generalization Id="63e8869f-0c91-41d4-b3e0-f41cddab9425" isSubstitutable="false">
+            <classMoniker Id="440ff3cf-3caf-45fe-a5af-e6b64b584912" LastKnownName="ДобавитьРаботника" />
+            <elementDefinition Id="14c404e9-e6a2-40a5-8ea6-644b3b754d14" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="d3408cfe-abb3-4814-bbb6-c79af96675c5" name="часоваяСтавка" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f5df0ab0-5ae6-4c18-a017-2cac9a79f22f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5c714888-b3c3-46ca-85ca-dc3dc106edf6" name="ДобавитьРаботникаОклад" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="60297149-4830-4184-ba95-0636e847fcf8" />
+        <generalsInternal>
+          <generalization Id="7fc73dda-993a-49c5-8f3e-2a60c6cfe0ef" isSubstitutable="false">
+            <classMoniker Id="440ff3cf-3caf-45fe-a5af-e6b64b584912" LastKnownName="ДобавитьРаботника" />
+            <elementDefinition Id="603ff7fc-77de-47cc-aad5-15687c84353c" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="8bf498c2-cb8c-499a-9797-1ffb5b5f2975" name="оклад" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="98930429-2a7c-4741-a1df-7dd59da52cc6" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="99250898-0a58-49fd-a30b-14c2b9b88157" name="ДобавитьРаботникаКомис" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5b7eef2c-a496-4980-8950-6604d72fe973" />
+        <generalsInternal>
+          <generalization Id="95f5f6e1-010d-4df1-b1b2-a8ea1bd51102" isSubstitutable="false">
+            <classMoniker Id="440ff3cf-3caf-45fe-a5af-e6b64b584912" LastKnownName="ДобавитьРаботника" />
+            <elementDefinition Id="3c98b980-6a11-413d-b396-abcf9e0cb33e" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="19f89ce9-e7db-4b3b-85f5-50fc6464cc9c" name="оклад" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e5d6c001-49da-47e1-8eeb-5f850008dcc1" />
+          </property>
+          <property Id="ccde6ae0-d6fe-4685-a67c-9ad773a928c3" name="комиссионные" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8c8680a1-f0e8-4792-a9a4-8c9601368bfd" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="ed5b650d-ad97-4d1b-8688-f6d16e50ed9f" name="Модель_ФИО">
+    <elementDefinition Id="ac869092-62d6-4834-8c2e-21c75fd18223" />
+    <profileInstances>
+      <packageHasProfileInstances Id="816fd760-0f1c-4abb-9836-10a636180cc6">
+        <profileInstance Id="0c81f80c-6ff2-4205-81e2-ff90d2bae3d4" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2ddeceba-68c3-440d-abfe-56e09dfb32f0">
+        <profileInstance Id="764c4b25-6907-456e-babb-198283a56779" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

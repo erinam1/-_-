@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="7af01d8a-d2f0-471a-be88-4e9148668d55" name="АссоциацияПрофсоюзПлатежТреб" linkedPackageId="35f0d66d-b98b-48a9-9d95-f425668686e2" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="dfd7f33e-6071-4c34-bd26-b055d7f32cff">
+      <profileInstance Id="cf9d840e-81a8-4e7f-96c5-1833e18bf249" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0198df6e-49a9-4ccf-83cd-23d740cef133">
+      <profileInstance Id="33c9335f-d4ec-4d96-90d3-e19388c1d548" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="480e5fea-2055-4977-8ee7-57fde580c64d" name="ПлатежТреб" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9ff64c05-5894-4983-871c-5c05b22c13a7" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7ac3a62d-2864-4dcd-8e4f-63c3d710e972" name="ЧленПрофсоюза" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="feb5fe34-5d24-4da1-aab3-308cfd3bd528" />
+        <targetEnds>
+          <association Id="f4769d1a-a55c-490e-a2e0-011e60f46a67" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="480e5fea-2055-4977-8ee7-57fde580c64d" LastKnownName="ПлатежТреб" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="24480a97-e5cf-4462-b226-3a5091b97199" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="36757248-2634-4246-b4a2-02757d554b87" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9415265f-5bee-4e2f-aa5e-d875f77b81ff" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="1d09dc65-9556-45ef-b359-6f82bbfc284c" name="Lower" value="0">
+                      <elementDefinition Id="cddb2714-845d-4f2f-85fc-76ecf5dfcad8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="e69c192f-b2e7-4981-93e0-b87e0d0e61d3" name="Upper" value="*">
+                      <elementDefinition Id="ce9e63b3-6fd5-4577-a9a5-5d3e06a9436b" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="3d239785-5484-479a-85ca-e3249b3d1dcd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="51652eb7-0ec2-4265-852c-21336fa17ea4" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="b4076b22-cac3-434e-870a-6f6122d205fb" name="взнос" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eda7bf2d-62de-4cd8-8d18-321a6cd50208" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="35f0d66d-b98b-48a9-9d95-f425668686e2" name="Модель_ФИО">
+    <elementDefinition Id="ac869092-62d6-4834-8c2e-21c75fd18223" />
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="94ba844e-15e0-4c51-be27-a74cadcf3ffd" name="АссоциацияРаботникКарта" linkedPackageId="5e5ecd1f-b3fc-45dd-b7a6-0da43eb3c8ed" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="5badd031-fa34-4a2b-9ffa-b738047c98d9">
+      <profileInstance Id="b1bfb20c-5164-426e-8855-37972b15e074" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="9be7f624-caea-4d01-a136-103983ee86d7">
+      <profileInstance Id="06b3d7c1-3821-468a-8481-a582988da4ca" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c13e4aa6-624c-4e38-8f97-d4704b1797e1" name="ВыплатаЧас" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="eed571c1-af1b-40eb-9d80-d1ccb56b7725" />
+        <targetEnds>
+          <association Id="b9919a13-0049-44f8-bd51-eb3b768b2cc3" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="665f217a-7229-42b3-b558-8285f1dfd5d7" LastKnownName="КартаТабУчета" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aaaf0608-f9b7-428e-9d21-39ef5c2b1e30" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f947880a-a352-4bf9-99d5-e0c64e30bcbd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d8b66ee5-0ed5-4cbc-8ed4-b7c5f3f7650b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="b7f11c5f-d4c0-4772-af72-7a36ec1b6079" name="Lower" value="0">
+                      <elementDefinition Id="17819972-3632-444d-bbc4-9b5a7b550a8f" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="3765314f-429e-443f-ac03-e81c923a85c8" name="Upper" value="*">
+                      <elementDefinition Id="bb35ceab-4adb-4b6e-9857-c72fab591326" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2804ecc4-a783-45e1-92dc-56b06944b288" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fec95a72-c0a4-46a5-807e-6d45fd02de13" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="cc8032af-ac35-41a9-bdd4-98e2e426e367" name="часоваяСтавка" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fab996d8-cae7-47f2-9ba8-93fd98a6a7d9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e9083627-3964-4b83-bb6b-20ea0391c933" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="665f217a-7229-42b3-b558-8285f1dfd5d7" name="КартаТабУчета" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7f821250-1a48-4545-aa5b-92afebaa76bc" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="e9083627-3964-4b83-bb6b-20ea0391c933" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="5e5ecd1f-b3fc-45dd-b7a6-0da43eb3c8ed" name="Модель_ФИО">
+    <elementDefinition Id="ac869092-62d6-4834-8c2e-21c75fd18223" />
+  </package>
+</logicalClassDesignerModel>

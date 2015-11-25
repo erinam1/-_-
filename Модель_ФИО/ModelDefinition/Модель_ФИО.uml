@@ -1,0 +1,2496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="ac869092-62d6-4834-8c2e-21c75fd18223"
+  name="Модель_ФИО" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="c7f585db-60a6-4f43-9e94-81a9049b92fe"
+        name="ДобавитьРаботника"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="f31f84e2-0dbd-424e-9f7c-98d9e6ae896c"
+            name="рабНом"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="263623df-c761-40bf-bdfa-a40344fcf1c0"
+            name="фио"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="dc14b682-b70a-4fac-a51d-900efa5c72ab"
+            name="адрес"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="175d559f-be69-4e56-8980-b2ed1fb32bfb"
+        name="ДобавитьРаботникаЧас"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="14c404e9-e6a2-40a5-8ea6-644b3b754d14"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c7f585db-60a6-4f43-9e94-81a9049b92fe"
+              LastKnownName="ДобавитьРаботника"
+              LastKnownLocation="Модель_ФИО.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="f5df0ab0-5ae6-4c18-a017-2cac9a79f22f"
+            name="часоваяСтавка"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="60297149-4830-4184-ba95-0636e847fcf8"
+        name="ДобавитьРаботникаОклад"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="603ff7fc-77de-47cc-aad5-15687c84353c"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c7f585db-60a6-4f43-9e94-81a9049b92fe"
+              LastKnownName="ДобавитьРаботника"
+              LastKnownLocation="Модель_ФИО.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="98930429-2a7c-4741-a1df-7dd59da52cc6"
+            name="оклад"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5b7eef2c-a496-4980-8950-6604d72fe973"
+        name="ДобавитьРаботникаКомис"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="3c98b980-6a11-413d-b396-abcf9e0cb33e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c7f585db-60a6-4f43-9e94-81a9049b92fe"
+              LastKnownName="ДобавитьРаботника"
+              LastKnownLocation="Модель_ФИО.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="e5d6c001-49da-47e1-8eeb-5f850008dcc1"
+            name="оклад"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8c8680a1-f0e8-4792-a9a4-8c9601368bfd"
+            name="комиссионные"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="98c078ff-bfa4-4cc2-b1e5-39ba9c36c288"
+        name="Работник"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="4287a253-895a-41b8-9401-dbcacb03e7fc"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="869caddc-eccf-4e0f-bb15-6a45255ebb02"
+              LastKnownName="ТипВыплат"
+              LastKnownLocation="Модель_ФИО.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fcc06c26-247a-40bd-acd8-95e41474e7dd"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="af6aa64e-a1e9-4beb-b3d0-75bb458c817a"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5473aea7-fd8a-4ea1-9116-f76bf5731208"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="d83e3a6b-e278-4c67-8d81-48fbf9c597e9"
+              LastKnownName="МетодВыплат"
+              LastKnownLocation="Модель_ФИО.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7a1d677e-f677-4394-aa2a-2a2f4cfadd67"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fd070a11-aa92-4c36-9749-c1695a49086d"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="672b1f25-a48e-429b-bd75-b81534ad8af9"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="d0865be3-f664-474b-8228-90d31dc1f77e"
+              LastKnownName="Членство"
+              LastKnownLocation="Модель_ФИО.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="efa95b0c-10f3-42a5-a8a1-7f9fff8295a5"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8e78b41b-4cbb-4b8c-97db-2a8da0b1b0a7"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="eed571c1-af1b-40eb-9d80-d1ccb56b7725"
+        name="ВыплатаЧас"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="a98a5682-aa2c-4863-9776-0614ba54ea9d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="869caddc-eccf-4e0f-bb15-6a45255ebb02"
+              LastKnownName="ТипВыплат"
+              LastKnownLocation="Модель_ФИО.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="fec95a72-c0a4-46a5-807e-6d45fd02de13"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7f821250-1a48-4545-aa5b-92afebaa76bc"
+              LastKnownName="КартаТабУчета"
+              LastKnownLocation="Модель_ФИО.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f947880a-a352-4bf9-99d5-e0c64e30bcbd"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2804ecc4-a783-45e1-92dc-56b06944b288"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="17819972-3632-444d-bbc4-9b5a7b550a8f"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bb35ceab-4adb-4b6e-9857-c72fab591326"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="fab996d8-cae7-47f2-9ba8-93fd98a6a7d9"
+            name="часоваяСтавка"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="560ba3f2-621a-452e-8281-32a9fc0a4d6c"
+        name="ВыплатаОклад"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="0e020a50-9c28-4cc0-b409-7959a48d7cc5"
+            isSubstitutable="false">
+            <classMoniker
+              Id="869caddc-eccf-4e0f-bb15-6a45255ebb02"
+              LastKnownName="ТипВыплат"
+              LastKnownLocation="Модель_ФИО.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="f5d0c8c6-104a-418e-8277-60429fe4d6b2"
+            name="оклад"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bd2bc08d-df95-4fee-a6e3-f73c6ec44518"
+        name="ВыплатаКомис"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="40a09df4-d084-443b-81b4-2e2bd0e97138"
+            isSubstitutable="false">
+            <classMoniker
+              Id="869caddc-eccf-4e0f-bb15-6a45255ebb02"
+              LastKnownName="ТипВыплат"
+              LastKnownLocation="Модель_ФИО.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="68cdfee5-7b2f-4cc9-8c94-55fcef123367"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="07d24e9b-c207-4105-9605-25148c005392"
+              LastKnownName="СправкаПродаж"
+              LastKnownLocation="Модель_ФИО.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ec534aa5-e82a-4565-8b70-5070d6e6086b"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2bd5fa4c-004f-4184-8aa7-99fe2f9c507f"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4e3b6150-eeae-420b-8269-c363832cdfc8"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="14c0fd4d-4eed-464a-8ba9-7b48c90ed0c6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="fffa9184-bada-4bb1-9131-3c4e1ba71da6"
+            name="оклад"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6db2930f-ad4a-4389-b69c-7fa52d271b2d"
+            name="комиссионСтавка"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="47c65bee-116b-4374-8992-64739ac7c0b9"
+        name="УдалитьРаботника"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7f821250-1a48-4545-aa5b-92afebaa76bc"
+        name="КартаТабУчета"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="07d24e9b-c207-4105-9605-25148c005392"
+        name="СправкаПродаж"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9ff64c05-5894-4983-871c-5c05b22c13a7"
+        name="ПлатежТреб"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="869caddc-eccf-4e0f-bb15-6a45255ebb02"
+        name="ТипВыплат"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5a84e7f5-b861-4a4d-8fd9-0dd1eb6d8914"
+        name="ВыплатаКасса"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="ccab9a25-a508-4f17-9531-3d9369e6c17e">
+            <interfaceMoniker
+              Id="d83e3a6b-e278-4c67-8d81-48fbf9c597e9"
+              LastKnownName="МетодВыплат"
+              LastKnownLocation="Модель_ФИО.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e1be8d8f-3c21-449e-8217-cb3a8b653e5a"
+        name="ВыплатаПочта"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="66e1e445-9a59-430b-b12e-3ffa7e18f90b">
+            <interfaceMoniker
+              Id="d83e3a6b-e278-4c67-8d81-48fbf9c597e9"
+              LastKnownName="МетодВыплат"
+              LastKnownLocation="Модель_ФИО.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="e016c5fe-bfca-4424-8976-0d42bbebe970"
+            name="адрес"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9d53ce3a-f998-44ac-b306-8a14bf992ea0"
+        name="ВыплатаБанк"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="a78cb773-eccb-4b22-891f-e400302e97f0">
+            <interfaceMoniker
+              Id="d83e3a6b-e278-4c67-8d81-48fbf9c597e9"
+              LastKnownName="МетодВыплат"
+              LastKnownLocation="Модель_ФИО.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="8f88a443-e3a6-4be9-8f94-81b106a96299"
+            name="банк"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="19fa592c-7b6a-480c-a867-5cb35ba92118"
+            name="счет"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="d83e3a6b-e278-4c67-8d81-48fbf9c597e9"
+        name="МетодВыплат"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="d0865be3-f664-474b-8228-90d31dc1f77e"
+        name="Членство"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="14f3e8c4-e530-4f88-b6f4-0a36b67d1ced"
+        name="НеЧленПрофсоюза"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="0c06b176-d286-4b3a-a267-5c5622468966">
+            <interfaceMoniker
+              Id="d0865be3-f664-474b-8228-90d31dc1f77e"
+              LastKnownName="Членство"
+              LastKnownLocation="Модель_ФИО.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="feb5fe34-5d24-4da1-aab3-308cfd3bd528"
+        name="ЧленПрофсоюза"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="bee281ab-c558-4daf-8bf1-f8448a69ee32">
+            <interfaceMoniker
+              Id="d0865be3-f664-474b-8228-90d31dc1f77e"
+              LastKnownName="Членство"
+              LastKnownLocation="Модель_ФИО.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="51652eb7-0ec2-4265-852c-21336fa17ea4"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="9ff64c05-5894-4983-871c-5c05b22c13a7"
+              LastKnownName="ПлатежТреб"
+              LastKnownLocation="Модель_ФИО.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="36757248-2634-4246-b4a2-02757d554b87"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d239785-5484-479a-85ca-e3249b3d1dcd"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="cddb2714-845d-4f2f-85fc-76ecf5dfcad8"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ce9e63b3-6fd5-4577-a9a5-5d3e06a9436b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="eda7bf2d-62de-4cd8-8d18-321a6cd50208"
+            name="взнос"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="6c12fef6-fa3d-49df-bc6c-04c614dc27bf"
+        name="НачислениеЗарплаты"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="8e6a767f-f13a-4cf1-bf6d-65367129a962"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="3ba8550e-5c31-4311-8b57-da7b96eb8136"
+                LastKnownName="работник : Работник"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="133caf48-5751-4e9b-94d4-ba39b2c33b8f"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="5651e033-1fc4-4dc7-ae83-347975abf283"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="2f5ce3a9-daac-4654-8179-1425051a89f8"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="63f61989-884e-4e5b-b5ac-8c8f92b15eb2"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="470bf132-4331-40b5-b33c-e68470f408e8"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="5651e033-1fc4-4dc7-ae83-347975abf283"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="aca98ff4-a919-4249-8801-5269fd46b737"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Модель_ФИО.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3ba8550e-5c31-4311-8b57-da7b96eb8136"
+                LastKnownName="работник : Работник"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3f884935-aebe-4a7f-8879-b34d02292b12"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="b315ed47-f28a-4dd4-afca-aaec19e661aa"
+                LastKnownName="начислитьЗарплату : НачислитьЗарплату"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2f5ce3a9-daac-4654-8179-1425051a89f8"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="3ba8550e-5c31-4311-8b57-da7b96eb8136"
+                LastKnownName="работник : Работник"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="8a40f5a7-6373-47ff-adf3-029fd83ce896"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="f41f0fb8-58c4-4337-86c1-ec74c310ce34"
+                LastKnownName="типВыплат : ТипВыплат"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="8f683ecf-0da6-4dfb-bf79-683afc98022d"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="d7cc6732-0390-4ee5-97e0-071c2ba95fdd"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="73ebb171-afd6-412f-9189-924632bc6b43"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="cb8ce8b6-2381-4837-bfe7-1f30ad6ecda9"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="d7cc6732-0390-4ee5-97e0-071c2ba95fdd"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="3b28dc26-bf0b-43e3-993e-5666de1f9b8e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Модель_ФИО.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f41f0fb8-58c4-4337-86c1-ec74c310ce34"
+                LastKnownName="типВыплат : ТипВыплат"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="63f61989-884e-4e5b-b5ac-8c8f92b15eb2"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="3ba8550e-5c31-4311-8b57-da7b96eb8136"
+                LastKnownName="работник : Работник"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="73ebb171-afd6-412f-9189-924632bc6b43"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="f41f0fb8-58c4-4337-86c1-ec74c310ce34"
+                LastKnownName="типВыплат : ТипВыплат"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cb8ce8b6-2381-4837-bfe7-1f30ad6ecda9"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="f41f0fb8-58c4-4337-86c1-ec74c310ce34"
+                LastKnownName="типВыплат : ТипВыплат"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="470bf132-4331-40b5-b33c-e68470f408e8"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="3ba8550e-5c31-4311-8b57-da7b96eb8136"
+                LastKnownName="работник : Работник"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="8f683ecf-0da6-4dfb-bf79-683afc98022d"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c3c390af-8749-4c70-8e21-44d37e2f654d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Модель_ФИО.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f41f0fb8-58c4-4337-86c1-ec74c310ce34"
+                LastKnownName="типВыплат : ТипВыплат"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="133caf48-5751-4e9b-94d4-ba39b2c33b8f"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6572daf2-0ef5-41f7-8c74-46aa0bf47624"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Модель_ФИО.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3ba8550e-5c31-4311-8b57-da7b96eb8136"
+                LastKnownName="работник : Работник"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="b315ed47-f28a-4dd4-afca-aaec19e661aa"
+            name="начислитьЗарплату : НачислитьЗарплату"
+            isActor="false"
+            lifelineDisplayName="начислитьЗарплату : НачислитьЗарплату">
+            <represents>
+              <propertyMoniker
+                Id="9486e8e5-ef81-4d0d-815c-fdb2f21ee9b4"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="3f884935-aebe-4a7f-8879-b34d02292b12"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="3ba8550e-5c31-4311-8b57-da7b96eb8136"
+            name="работник : Работник"
+            isActor="false"
+            lifelineDisplayName="работник : Работник">
+            <represents>
+              <propertyMoniker
+                Id="ffa83057-f1b1-45ad-a099-b1d456c60c0b"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="5651e033-1fc4-4dc7-ae83-347975abf283"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="133caf48-5751-4e9b-94d4-ba39b2c33b8f"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="f41f0fb8-58c4-4337-86c1-ec74c310ce34"
+            name="типВыплат : ТипВыплат"
+            isActor="false"
+            lifelineDisplayName="типВыплат : ТипВыплат">
+            <represents>
+              <propertyMoniker
+                Id="ebc6e829-d176-428b-8b3f-35cc9a2960e9"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="d7cc6732-0390-4ee5-97e0-071c2ba95fdd"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="8f683ecf-0da6-4dfb-bf79-683afc98022d"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="e5c28a3b-d49e-488a-8376-f4a4363b720c"
+            name="Начислить(Дата)"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3f884935-aebe-4a7f-8879-b34d02292b12"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2f5ce3a9-daac-4654-8179-1425051a89f8"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f29310b7-3831-4d99-b2ee-76ee6c22b44d"
+            name="Рассчитать(Дата)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="63f61989-884e-4e5b-b5ac-8c8f92b15eb2"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="73ebb171-afd6-412f-9189-924632bc6b43"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="68707b36-5894-4d8f-bcfb-b8fbadbbb021"
+            name="Зарплата"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cb8ce8b6-2381-4837-bfe7-1f30ad6ecda9"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="470bf132-4331-40b5-b33c-e68470f408e8"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="ffa83057-f1b1-45ad-a099-b1d456c60c0b"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="98c078ff-bfa4-4cc2-b1e5-39ba9c36c288"
+                LastKnownName="Работник"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9486e8e5-ef81-4d0d-815c-fdb2f21ee9b4"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="36201e32-8da4-4f10-a9ab-c46e58c795ce"
+                LastKnownName="НачислитьЗарплату"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ebc6e829-d176-428b-8b3f-35cc9a2960e9"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="869caddc-eccf-4e0f-bb15-6a45255ebb02"
+                LastKnownName="ТипВыплат"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="36201e32-8da4-4f10-a9ab-c46e58c795ce"
+        name="НачислитьЗарплату"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="aca98ff4-a919-4249-8801-5269fd46b737"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6572daf2-0ef5-41f7-8c74-46aa0bf47624"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="3b28dc26-bf0b-43e3-993e-5666de1f9b8e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c3c390af-8749-4c70-8e21-44d37e2f654d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="cba30e9e-2d49-4f57-b2cf-3b3a2cb58153"
+        name="НачислениеЗарплатыПочасовой"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="4a2df906-b0ad-4290-854b-38e9ff74caf9">
+            <body>Для всех КартаТабУчета</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker
+                Id="a12bd51c-5407-466b-a805-c719047e7fda"
+                LastKnownName="BehaviorExecutionSpecification2"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <behaviorExecutionSpecificationMoniker
+                Id="6b1c457f-49a1-4824-870f-ca7f68d35d6b"
+                LastKnownName="BehaviorExecutionSpecification3"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="4d317657-c280-4bf3-9b6f-643275acf4c5"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="57fd1162-5239-435f-ad8f-742b2587237a"
+                LastKnownName="выплатаЧас : ВыплатаЧас"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="069eb12b-0558-4195-863d-22c79b07d851"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="3f5bf232-66ef-4b86-86ac-339dc98150db"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="77fa2793-5fea-4415-bfcf-daa1112718ef"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="1f7e1b52-0bf7-4d42-ab5e-342cbbb0e48d"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b24906e5-ee0f-4d2b-974f-28f2a996d8de"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="6a3c0b26-2ad9-42d7-9e90-d905710802a6"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="6c7b98a0-ac53-443f-ba03-aa9d4c708012"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="1a0aed89-674d-40ba-8922-c2f8679790cf"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="3f5bf232-66ef-4b86-86ac-339dc98150db"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6e624ba6-13e6-4e64-af28-5bfee5289e28"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Модель_ФИО.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="57fd1162-5239-435f-ad8f-742b2587237a"
+                LastKnownName="выплатаЧас : ВыплатаЧас"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="51bffd0b-008f-426b-ae93-540a7b448b79"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="36c92f08-77af-4e49-aafc-16308309edd2"
+                LastKnownName="работник : Работник"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="77fa2793-5fea-4415-bfcf-daa1112718ef"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="57fd1162-5239-435f-ad8f-742b2587237a"
+                LastKnownName="выплатаЧас : ВыплатаЧас"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="a12bd51c-5407-466b-a805-c719047e7fda"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="ffb62b6f-7fc5-4863-aae3-76168085aa22"
+                LastKnownName="картаТабУчета : КартаТабУчета"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="5dd44123-9b27-462d-b357-d2217b86c9c8"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="5918ffad-4ba1-4d8f-bdf3-be60a03e0bc8"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="8b49b6ee-8ca0-4dc9-b4df-e864c7376b58"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="05450c63-55a8-4f8c-8684-6a3c9525699c"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="5918ffad-4ba1-4d8f-bdf3-be60a03e0bc8"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f06dbbeb-41d6-4c5a-b585-611bc6c222f7"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Модель_ФИО.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ffb62b6f-7fc5-4863-aae3-76168085aa22"
+                LastKnownName="картаТабУчета : КартаТабУчета"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1f7e1b52-0bf7-4d42-ab5e-342cbbb0e48d"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="57fd1162-5239-435f-ad8f-742b2587237a"
+                LastKnownName="выплатаЧас : ВыплатаЧас"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8b49b6ee-8ca0-4dc9-b4df-e864c7376b58"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="ffb62b6f-7fc5-4863-aae3-76168085aa22"
+                LastKnownName="картаТабУчета : КартаТабУчета"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="05450c63-55a8-4f8c-8684-6a3c9525699c"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="ffb62b6f-7fc5-4863-aae3-76168085aa22"
+                LastKnownName="картаТабУчета : КартаТабУчета"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b24906e5-ee0f-4d2b-974f-28f2a996d8de"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="57fd1162-5239-435f-ad8f-742b2587237a"
+                LastKnownName="выплатаЧас : ВыплатаЧас"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="5dd44123-9b27-462d-b357-d2217b86c9c8"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0def67b4-9791-4627-a635-a11106605f36"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Модель_ФИО.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ffb62b6f-7fc5-4863-aae3-76168085aa22"
+                LastKnownName="картаТабУчета : КартаТабУчета"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="6b1c457f-49a1-4824-870f-ca7f68d35d6b"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="ffb62b6f-7fc5-4863-aae3-76168085aa22"
+                LastKnownName="картаТабУчета : КартаТабУчета"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="71737597-cbdb-4306-ab7d-7cde83eed8e5"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="2e710778-f65c-42d2-a21d-f509227b9efe"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="536de89c-6e41-443a-9940-0b88bb2ce2ef"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="06b1d7bf-a08f-4618-b151-2ae26ae73ffc"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="2e710778-f65c-42d2-a21d-f509227b9efe"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f2141139-1002-49f1-8741-52e337e5f44e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Модель_ФИО.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ffb62b6f-7fc5-4863-aae3-76168085aa22"
+                LastKnownName="картаТабУчета : КартаТабУчета"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="536de89c-6e41-443a-9940-0b88bb2ce2ef"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="ffb62b6f-7fc5-4863-aae3-76168085aa22"
+                LastKnownName="картаТабУчета : КартаТабУчета"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6a3c0b26-2ad9-42d7-9e90-d905710802a6"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="57fd1162-5239-435f-ad8f-742b2587237a"
+                LastKnownName="выплатаЧас : ВыплатаЧас"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="06b1d7bf-a08f-4618-b151-2ae26ae73ffc"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="ffb62b6f-7fc5-4863-aae3-76168085aa22"
+                LastKnownName="картаТабУчета : КартаТабУчета"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6c7b98a0-ac53-443f-ba03-aa9d4c708012"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="57fd1162-5239-435f-ad8f-742b2587237a"
+                LastKnownName="выплатаЧас : ВыплатаЧас"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="71737597-cbdb-4306-ab7d-7cde83eed8e5"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="811ff6d2-0b98-43f0-8bb6-2d5e6c80a84d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Модель_ФИО.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ffb62b6f-7fc5-4863-aae3-76168085aa22"
+                LastKnownName="картаТабУчета : КартаТабУчета"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1a0aed89-674d-40ba-8922-c2f8679790cf"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="57fd1162-5239-435f-ad8f-742b2587237a"
+                LastKnownName="выплатаЧас : ВыплатаЧас"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3c72ff59-535b-4b1d-bfc9-c4ee947e0b78"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="36c92f08-77af-4e49-aafc-16308309edd2"
+                LastKnownName="работник : Работник"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="069eb12b-0558-4195-863d-22c79b07d851"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c6791c12-1c81-41da-ab41-299d30adac2a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Модель_ФИО.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="57fd1162-5239-435f-ad8f-742b2587237a"
+                LastKnownName="выплатаЧас : ВыплатаЧас"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="36c92f08-77af-4e49-aafc-16308309edd2"
+            name="работник : Работник"
+            isActor="false"
+            lifelineDisplayName="работник : Работник">
+            <represents>
+              <propertyMoniker
+                Id="193cb887-24d0-4966-8edf-c9f870940865"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="51bffd0b-008f-426b-ae93-540a7b448b79"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="3c72ff59-535b-4b1d-bfc9-c4ee947e0b78"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="57fd1162-5239-435f-ad8f-742b2587237a"
+            name="выплатаЧас : ВыплатаЧас"
+            isActor="false"
+            lifelineDisplayName="выплатаЧас : ВыплатаЧас">
+            <represents>
+              <propertyMoniker
+                Id="fad718ef-0ecb-4894-88c0-b273a8fcf2f9"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="3f5bf232-66ef-4b86-86ac-339dc98150db"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="069eb12b-0558-4195-863d-22c79b07d851"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="ffb62b6f-7fc5-4863-aae3-76168085aa22"
+            name="картаТабУчета : КартаТабУчета"
+            isActor="false"
+            lifelineDisplayName="картаТабУчета : КартаТабУчета">
+            <represents>
+              <propertyMoniker
+                Id="815e2260-ce4a-412e-bbe7-d62eeb0a3d10"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="5918ffad-4ba1-4d8f-bdf3-be60a03e0bc8"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="5dd44123-9b27-462d-b357-d2217b86c9c8"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2e710778-f65c-42d2-a21d-f509227b9efe"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="71737597-cbdb-4306-ab7d-7cde83eed8e5"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="21dd939e-73d0-47c5-b1ad-6888ffa5dd43"
+            name="Рассчитать(Дата)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="51bffd0b-008f-426b-ae93-540a7b448b79"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="77fa2793-5fea-4415-bfcf-daa1112718ef"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="040ec6f9-84d1-4c89-bd98-1d10d1595be8"
+            name="ПолучитьДату"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1f7e1b52-0bf7-4d42-ab5e-342cbbb0e48d"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8b49b6ee-8ca0-4dc9-b4df-e864c7376b58"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="e48f5b34-b346-4faa-992f-3df969a64a58"
+            name="Дата"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="05450c63-55a8-4f8c-8684-6a3c9525699c"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b24906e5-ee0f-4d2b-974f-28f2a996d8de"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="8f2f23ee-93bb-48e6-bdaf-6824511c865d"
+            name="ПолучитьЧасы"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6a3c0b26-2ad9-42d7-9e90-d905710802a6"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="536de89c-6e41-443a-9940-0b88bb2ce2ef"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="67aad6a8-7c34-4068-aba1-2aeab2ad103a"
+            name="Часы"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="06b1d7bf-a08f-4618-b151-2ae26ae73ffc"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6c7b98a0-ac53-443f-ba03-aa9d4c708012"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="21b2550d-c72c-4b8f-aba2-5f4dc7b0f3d4"
+            name="Зарплата"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1a0aed89-674d-40ba-8922-c2f8679790cf"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3c72ff59-535b-4b1d-bfc9-c4ee947e0b78"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="43aa7460-309b-4cc7-a28b-bcb25f97912e"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="36201e32-8da4-4f10-a9ab-c46e58c795ce"
+                LastKnownName="НачислитьЗарплату"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="193cb887-24d0-4966-8edf-c9f870940865"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="98c078ff-bfa4-4cc2-b1e5-39ba9c36c288"
+                LastKnownName="Работник"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fad718ef-0ecb-4894-88c0-b273a8fcf2f9"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="eed571c1-af1b-40eb-9d80-d1ccb56b7725"
+                LastKnownName="ВыплатаЧас"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="815e2260-ce4a-412e-bbe7-d62eeb0a3d10"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="7f821250-1a48-4545-aa5b-92afebaa76bc"
+                LastKnownName="КартаТабУчета"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6e624ba6-13e6-4e64-af28-5bfee5289e28"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c6791c12-1c81-41da-ab41-299d30adac2a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f06dbbeb-41d6-4c5a-b585-611bc6c222f7"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0def67b4-9791-4627-a635-a11106605f36"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f2141139-1002-49f1-8741-52e337e5f44e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="811ff6d2-0b98-43f0-8bb6-2d5e6c80a84d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="765af7b7-baac-460f-ae77-923f86545b03"
+        name="НачислениеЗарплатыКомис"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="c1344e78-c355-4059-be3e-8656e7901399">
+            <body>Для всех СправкаПродаж</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker
+                Id="6f750f29-a97d-425b-9f17-ca6ba9203e5f"
+                LastKnownName="BehaviorExecutionSpecification2"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <behaviorExecutionSpecificationMoniker
+                Id="45d8f07f-d67a-423e-bee3-dcbe0752ce8e"
+                LastKnownName="BehaviorExecutionSpecification3"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="1eeefb38-73df-4f17-a20d-012d5e6d1f95"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="76f9f62d-8a68-4021-90de-33aef98ce1fb"
+                LastKnownName="выплатаКомис : ВыплатаКомис"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="470e95b9-455a-43ff-b778-b8d9b06ed4ca"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="6fd78ad0-3f9c-452a-be4f-19a03f4b0bfd"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="f4464d43-4f1d-4342-827e-d0fce828ce75"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="abe78d47-50cb-429e-bc8c-a176e85dbb2e"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5a13ba7c-fcc1-4c83-b714-c0765999435a"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b212c725-9b35-4495-a282-6858c158d11e"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="832e406c-58ae-47db-a257-9121255b011c"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ac5f8a91-091a-482a-ac04-6ec38e689133"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="6fd78ad0-3f9c-452a-be4f-19a03f4b0bfd"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4fbcf6bb-ca23-4138-8e25-a4116f4f7749"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Модель_ФИО.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="76f9f62d-8a68-4021-90de-33aef98ce1fb"
+                LastKnownName="выплатаКомис : ВыплатаКомис"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="64b74463-50a1-44c2-b1e1-75a763051edd"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="455a0eb5-bb48-4b95-a3c6-3c43dc548103"
+                LastKnownName="работник : Работник"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f4464d43-4f1d-4342-827e-d0fce828ce75"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="76f9f62d-8a68-4021-90de-33aef98ce1fb"
+                LastKnownName="выплатаКомис : ВыплатаКомис"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="6f750f29-a97d-425b-9f17-ca6ba9203e5f"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="fd77fe29-03e3-4370-94e8-2d1746e38409"
+                LastKnownName="справкаПродаж : СправкаПродаж"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="2ed25674-8075-4c14-8ed1-0bf23e44e841"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="5b0cabfb-3633-4e7c-82ef-27808ef9c456"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0851e765-c8f9-44d0-b706-208e87b65328"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="67475507-ef6d-4f27-a026-4278b0cba5e0"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="5b0cabfb-3633-4e7c-82ef-27808ef9c456"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e8851c4a-e4e3-468d-8c34-b3bc647d2b72"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Модель_ФИО.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fd77fe29-03e3-4370-94e8-2d1746e38409"
+                LastKnownName="справкаПродаж : СправкаПродаж"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0851e765-c8f9-44d0-b706-208e87b65328"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="fd77fe29-03e3-4370-94e8-2d1746e38409"
+                LastKnownName="справкаПродаж : СправкаПродаж"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="abe78d47-50cb-429e-bc8c-a176e85dbb2e"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="76f9f62d-8a68-4021-90de-33aef98ce1fb"
+                LastKnownName="выплатаКомис : ВыплатаКомис"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5a13ba7c-fcc1-4c83-b714-c0765999435a"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="76f9f62d-8a68-4021-90de-33aef98ce1fb"
+                LastKnownName="выплатаКомис : ВыплатаКомис"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="67475507-ef6d-4f27-a026-4278b0cba5e0"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="fd77fe29-03e3-4370-94e8-2d1746e38409"
+                LastKnownName="справкаПродаж : СправкаПродаж"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="2ed25674-8075-4c14-8ed1-0bf23e44e841"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b0c04147-4633-4516-9213-d4a9238afb89"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Модель_ФИО.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fd77fe29-03e3-4370-94e8-2d1746e38409"
+                LastKnownName="справкаПродаж : СправкаПродаж"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="45d8f07f-d67a-423e-bee3-dcbe0752ce8e"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="fd77fe29-03e3-4370-94e8-2d1746e38409"
+                LastKnownName="справкаПродаж : СправкаПродаж"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="9be089a2-f541-491e-ad84-5bffa0c5ef00"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="a2c7c2ff-3211-4e0b-8b43-2e30a16aae29"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="94b8572c-9580-4a0b-b50e-35a068c94b76"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ff477926-39c5-44e4-83f6-918f9ae4be08"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="a2c7c2ff-3211-4e0b-8b43-2e30a16aae29"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4cd8621b-29d6-4c2b-9a69-6af98e1c1c49"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Модель_ФИО.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fd77fe29-03e3-4370-94e8-2d1746e38409"
+                LastKnownName="справкаПродаж : СправкаПродаж"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b212c725-9b35-4495-a282-6858c158d11e"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="76f9f62d-8a68-4021-90de-33aef98ce1fb"
+                LastKnownName="выплатаКомис : ВыплатаКомис"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="94b8572c-9580-4a0b-b50e-35a068c94b76"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="fd77fe29-03e3-4370-94e8-2d1746e38409"
+                LastKnownName="справкаПродаж : СправкаПродаж"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="832e406c-58ae-47db-a257-9121255b011c"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="76f9f62d-8a68-4021-90de-33aef98ce1fb"
+                LastKnownName="выплатаКомис : ВыплатаКомис"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ff477926-39c5-44e4-83f6-918f9ae4be08"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="fd77fe29-03e3-4370-94e8-2d1746e38409"
+                LastKnownName="справкаПродаж : СправкаПродаж"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="9be089a2-f541-491e-ad84-5bffa0c5ef00"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ea13e0ae-a943-4ec1-ba5a-d72d3fdce307"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Модель_ФИО.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fd77fe29-03e3-4370-94e8-2d1746e38409"
+                LastKnownName="справкаПродаж : СправкаПродаж"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ac5f8a91-091a-482a-ac04-6ec38e689133"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="76f9f62d-8a68-4021-90de-33aef98ce1fb"
+                LastKnownName="выплатаКомис : ВыплатаКомис"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7ca97d26-e261-4f3f-b53a-156682772810"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="455a0eb5-bb48-4b95-a3c6-3c43dc548103"
+                LastKnownName="работник : Работник"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="470e95b9-455a-43ff-b778-b8d9b06ed4ca"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="fcc6541b-85b2-41ca-8cfa-857d07001884"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Модель_ФИО.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="76f9f62d-8a68-4021-90de-33aef98ce1fb"
+                LastKnownName="выплатаКомис : ВыплатаКомис"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="455a0eb5-bb48-4b95-a3c6-3c43dc548103"
+            name="работник : Работник"
+            isActor="false"
+            lifelineDisplayName="работник : Работник">
+            <represents>
+              <propertyMoniker
+                Id="533dab3f-2c9c-41b7-89f1-d15342d1560d"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="64b74463-50a1-44c2-b1e1-75a763051edd"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7ca97d26-e261-4f3f-b53a-156682772810"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="76f9f62d-8a68-4021-90de-33aef98ce1fb"
+            name="выплатаКомис : ВыплатаКомис"
+            isActor="false"
+            lifelineDisplayName="выплатаКомис : ВыплатаКомис">
+            <represents>
+              <propertyMoniker
+                Id="530ab3c5-e1b0-4e06-9f9d-0ab44a69b8ce"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="6fd78ad0-3f9c-452a-be4f-19a03f4b0bfd"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="470e95b9-455a-43ff-b778-b8d9b06ed4ca"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="fd77fe29-03e3-4370-94e8-2d1746e38409"
+            name="справкаПродаж : СправкаПродаж"
+            isActor="false"
+            lifelineDisplayName="справкаПродаж : СправкаПродаж">
+            <represents>
+              <propertyMoniker
+                Id="22dba0ff-0f3c-4b8d-a534-f1ec18e99fc1"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="5b0cabfb-3633-4e7c-82ef-27808ef9c456"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2ed25674-8075-4c14-8ed1-0bf23e44e841"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a2c7c2ff-3211-4e0b-8b43-2e30a16aae29"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="Модель_ФИО.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="9be089a2-f541-491e-ad84-5bffa0c5ef00"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="69c4070e-955d-495c-a0be-5e7aab108e55"
+            name="Рассчитать(Дата)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="64b74463-50a1-44c2-b1e1-75a763051edd"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f4464d43-4f1d-4342-827e-d0fce828ce75"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="4cc1cc15-f3c3-459a-add5-a1bcad42103e"
+            name="ПолучитьДату"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="abe78d47-50cb-429e-bc8c-a176e85dbb2e"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0851e765-c8f9-44d0-b706-208e87b65328"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="7b76b69b-2b68-48b4-b645-09493b92f19b"
+            name="Дата"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="67475507-ef6d-4f27-a026-4278b0cba5e0"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5a13ba7c-fcc1-4c83-b714-c0765999435a"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="0e290ff1-09ee-44d7-a631-ced393e3edd1"
+            name="ПолучитьСумму"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b212c725-9b35-4495-a282-6858c158d11e"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="94b8572c-9580-4a0b-b50e-35a068c94b76"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="392b26e8-d762-43b8-9e6a-61b670f76d45"
+            name="Сумма"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ff477926-39c5-44e4-83f6-918f9ae4be08"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="832e406c-58ae-47db-a257-9121255b011c"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="40c647a1-5fef-4c9d-968c-ec8ea9434e88"
+            name="Зарплата"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ac5f8a91-091a-482a-ac04-6ec38e689133"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7ca97d26-e261-4f3f-b53a-156682772810"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="533dab3f-2c9c-41b7-89f1-d15342d1560d"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="98c078ff-bfa4-4cc2-b1e5-39ba9c36c288"
+                LastKnownName="Работник"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="530ab3c5-e1b0-4e06-9f9d-0ab44a69b8ce"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="bd2bc08d-df95-4fee-a6e3-f73c6ec44518"
+                LastKnownName="ВыплатаКомис"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="22dba0ff-0f3c-4b8d-a534-f1ec18e99fc1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="07d24e9b-c207-4105-9605-25148c005392"
+                LastKnownName="СправкаПродаж"
+                LastKnownLocation="Модель_ФИО.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4fbcf6bb-ca23-4138-8e25-a4116f4f7749"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="fcc6541b-85b2-41ca-8cfa-857d07001884"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e8851c4a-e4e3-468d-8c34-b3bc647d2b72"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b0c04147-4633-4516-9213-d4a9238afb89"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4cd8621b-29d6-4c2b-9a69-6af98e1c1c49"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ea13e0ae-a943-4ec1-ba5a-d72d3fdce307"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

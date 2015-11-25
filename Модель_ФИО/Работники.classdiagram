@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="6bc65fda-d947-40d3-bba0-14c58fb1eb5f" name="Работники" linkedPackageId="502070f3-74e4-4f55-a1e6-ac39fb273164" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="8efa07cb-f271-44cd-b668-bbd0e5932b5c">
+      <profileInstance Id="a19eef6c-5acd-4d2c-8901-e3b40fa01d99" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="9657b04f-c529-48b5-8512-db8eb1700805">
+      <profileInstance Id="9fbd7d18-b500-4757-9770-c2ade83ecc15" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="86fc0729-34de-47ee-8c23-5c4a4631edac" name="Работник" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="98c078ff-bfa4-4cc2-b1e5-39ba9c36c288" />
+        <targetEnds>
+          <association Id="bd9abee0-9f6d-4cbc-8e57-eeb9be04d99c" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c5770368-ecdc-4dea-9ed1-818e0770b179" LastKnownName="ТипВыплат" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="455b5543-9850-470b-b085-9bb34c6b7c35" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fcc06c26-247a-40bd-acd8-95e41474e7dd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="847b7d4b-d95e-47f4-9cb4-e11e7d24963d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="af6aa64e-a1e9-4beb-b3d0-75bb458c817a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4287a253-895a-41b8-9401-dbcacb03e7fc" />
+          </association>
+          <association Id="f389654e-b5e5-4ca2-88c1-f6e24b95d283" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="6481d530-e329-4a56-9c66-f1c6cebbf5d8" LastKnownName="МетодВыплат" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e5ea6538-005f-4174-b8bc-8d3cdaffc5d7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7a1d677e-f677-4394-aa2a-2a2f4cfadd67" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c64e443c-be7c-4a49-b4a7-5ea3cf980cde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fd070a11-aa92-4c36-9749-c1695a49086d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5473aea7-fd8a-4ea1-9116-f76bf5731208" />
+          </association>
+          <association Id="a3068c10-59a1-4b0b-ab1b-d0521588f426" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="d0947286-714c-423b-833f-7d233133b398" LastKnownName="Членство" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9c0dfb08-0f6e-4258-8d50-2e9de3079e57" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="efa95b0c-10f3-42a5-a8a1-7f9fff8295a5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fae897ff-3483-42ff-af8e-77302f00378d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8e78b41b-4cbb-4b8c-97db-2a8da0b1b0a7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="672b1f25-a48e-429b-bd75-b81534ad8af9" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c5770368-ecdc-4dea-9ed1-818e0770b179" name="ТипВыплат" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="869caddc-eccf-4e0f-bb15-6a45255ebb02" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="84f48cdf-73f9-4a15-8888-f4e0779d00f7" name="ВыплатаКомис" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bd2bc08d-df95-4fee-a6e3-f73c6ec44518" />
+        <generalsInternal>
+          <generalization Id="b1b181ae-6d99-4540-842b-bbd6723214e6" isSubstitutable="false">
+            <classMoniker Id="c5770368-ecdc-4dea-9ed1-818e0770b179" LastKnownName="ТипВыплат" />
+            <elementDefinition Id="40a09df4-d084-443b-81b4-2e2bd0e97138" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="dcfc53f1-dd2f-4108-9a06-b039e813e963" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7148e442-bae6-43b6-a71e-2be59f913333" LastKnownName="СправкаПродаж" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1035171a-49af-4e86-9e45-5a2bf2f3277e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ec534aa5-e82a-4565-8b70-5070d6e6086b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b12a3c6b-8c7e-41ec-a2a2-884d8550b5a7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="40fa921a-4f8e-4c32-aca9-84a749abab52" name="Lower" value="0">
+                      <elementDefinition Id="4e3b6150-eeae-420b-8269-c363832cdfc8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="fbe2999a-af79-4f1e-bdc5-907e815d9338" name="Upper" value="*">
+                      <elementDefinition Id="14c0fd4d-4eed-464a-8ba9-7b48c90ed0c6" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2bd5fa4c-004f-4184-8aa7-99fe2f9c507f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="68cdfee5-7b2f-4cc9-8c94-55fcef123367" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="270d9693-6310-468c-b100-74594101d6aa" name="оклад" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fffa9184-bada-4bb1-9131-3c4e1ba71da6" />
+          </property>
+          <property Id="6a1cab9d-0bba-435a-a450-35c59f5c897b" name="комиссионСтавка" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6db2930f-ad4a-4389-b69c-7fa52d271b2d" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6fd34e23-f736-4a39-9fb9-811500eca7b6" name="ВыплатаОклад" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="560ba3f2-621a-452e-8281-32a9fc0a4d6c" />
+        <generalsInternal>
+          <generalization Id="378ec30a-558a-4a01-963a-362555431174" isSubstitutable="false">
+            <classMoniker Id="c5770368-ecdc-4dea-9ed1-818e0770b179" LastKnownName="ТипВыплат" />
+            <elementDefinition Id="0e020a50-9c28-4cc0-b409-7959a48d7cc5" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="5707da79-c8d7-4204-9844-f03fb5405721" name="оклад" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f5d0c8c6-104a-418e-8277-60429fe4d6b2" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5e2b6fbf-5163-4b44-8e70-0c0a616151c7" name="ВыплатаЧас" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="eed571c1-af1b-40eb-9d80-d1ccb56b7725" />
+        <generalsInternal>
+          <generalization Id="73d69c94-9cd9-44e6-a207-fc59ef4b7b61" isSubstitutable="false">
+            <classMoniker Id="c5770368-ecdc-4dea-9ed1-818e0770b179" LastKnownName="ТипВыплат" />
+            <elementDefinition Id="a98a5682-aa2c-4863-9776-0614ba54ea9d" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="a672aa69-5e7c-4cf0-9b51-4d8f7f528fef" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5bcefab7-b38f-41d9-8814-90bf0a1ebc14" LastKnownName="КартаТабУчета" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c5503949-1296-40d4-9ce7-2fab1f1ac879" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f947880a-a352-4bf9-99d5-e0c64e30bcbd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="281a5481-c8d2-4535-92c5-45679e480ec0" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="c5c92251-dc97-409c-b224-85340f22f5a4" name="Lower" value="0">
+                      <elementDefinition Id="17819972-3632-444d-bbc4-9b5a7b550a8f" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="a44157db-492d-417f-a228-42970f87e3c0" name="Upper" value="*">
+                      <elementDefinition Id="bb35ceab-4adb-4b6e-9857-c72fab591326" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2804ecc4-a783-45e1-92dc-56b06944b288" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fec95a72-c0a4-46a5-807e-6d45fd02de13" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="7bc991b0-30c4-48f4-8b9d-52bb0031c865" name="часоваяСтавка" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fab996d8-cae7-47f2-9ba8-93fd98a6a7d9" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5bcefab7-b38f-41d9-8814-90bf0a1ebc14" name="КартаТабУчета" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7f821250-1a48-4545-aa5b-92afebaa76bc" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7148e442-bae6-43b6-a71e-2be59f913333" name="СправкаПродаж" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="07d24e9b-c207-4105-9605-25148c005392" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="414e8e44-860e-4821-bfe2-77ea5263bf60" name="ВыплатаКасса" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5a84e7f5-b861-4a4d-8fd9-0dd1eb6d8914" />
+        <suppliersInternal>
+          <interfaceRealization Id="56339367-fa69-403b-b281-c6931348d1a6">
+            <interfaceMoniker Id="6481d530-e329-4a56-9c66-f1c6cebbf5d8" LastKnownName="МетодВыплат" />
+            <elementDefinition Id="ccab9a25-a508-4f17-9531-3d9369e6c17e" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="54aa93bb-2545-44fb-ac0d-c11df5583436" name="ВыплатаПочта" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e1be8d8f-3c21-449e-8217-cb3a8b653e5a" />
+        <suppliersInternal>
+          <interfaceRealization Id="e36465d3-49fb-40a1-b49a-3c3684e57dd5">
+            <interfaceMoniker Id="6481d530-e329-4a56-9c66-f1c6cebbf5d8" LastKnownName="МетодВыплат" />
+            <elementDefinition Id="66e1e445-9a59-430b-b12e-3ffa7e18f90b" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="a9b9e849-fd40-4462-a135-4f0e4fd43377" name="адрес" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e016c5fe-bfca-4424-8976-0d42bbebe970" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9bae9f11-6ba4-44ee-a5b5-8506e5e4a4c1" name="ВыплатаБанк" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9d53ce3a-f998-44ac-b306-8a14bf992ea0" />
+        <suppliersInternal>
+          <interfaceRealization Id="7d61be5f-2a03-4f5f-8624-dd0b67fafefe">
+            <interfaceMoniker Id="6481d530-e329-4a56-9c66-f1c6cebbf5d8" LastKnownName="МетодВыплат" />
+            <elementDefinition Id="a78cb773-eccb-4b22-891f-e400302e97f0" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="755a25f9-809c-473b-8af6-281b0a307b88" name="банк" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8f88a443-e3a6-4be9-8f94-81b106a96299" />
+          </property>
+          <property Id="cf42017f-4901-48f4-ad6b-8cf100876602" name="счет" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="19fa592c-7b6a-480c-a867-5cb35ba92118" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="6481d530-e329-4a56-9c66-f1c6cebbf5d8" name="МетодВыплат" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d83e3a6b-e278-4c67-8d81-48fbf9c597e9" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="d0947286-714c-423b-833f-7d233133b398" name="Членство" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d0865be3-f664-474b-8228-90d31dc1f77e" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6435d20a-9e57-425f-b852-314b8fb5cb8d" name="НеЧленПрофсоюза" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="14f3e8c4-e530-4f88-b6f4-0a36b67d1ced" />
+        <suppliersInternal>
+          <interfaceRealization Id="f667f1f4-66ba-4c82-9286-724c6dc3eee7">
+            <interfaceMoniker Id="d0947286-714c-423b-833f-7d233133b398" LastKnownName="Членство" />
+            <elementDefinition Id="0c06b176-d286-4b3a-a267-5c5622468966" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="98a4a2da-64b3-408d-937b-45d9584c7ba3" name="ЧленПрофсоюза" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="feb5fe34-5d24-4da1-aab3-308cfd3bd528" />
+        <suppliersInternal>
+          <interfaceRealization Id="e5a5d394-6c39-48f4-bd18-924018b0681c">
+            <interfaceMoniker Id="d0947286-714c-423b-833f-7d233133b398" LastKnownName="Членство" />
+            <elementDefinition Id="bee281ab-c558-4daf-8bf1-f8448a69ee32" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="774487c8-ebe1-4623-9ecf-0b53dc001ca7" name="взнос" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eda7bf2d-62de-4cd8-8d18-321a6cd50208" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="502070f3-74e4-4f55-a1e6-ac39fb273164" name="Модель_ФИО">
+    <elementDefinition Id="ac869092-62d6-4834-8c2e-21c75fd18223" />
+  </package>
+</logicalClassDesignerModel>
